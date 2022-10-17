@@ -1,0 +1,147 @@
+html{
+		scroll-behavior: smooth;
+	}
+	
+body{
+		background-color: #7E8987;
+		margin: 0px;
+		padding: 0px;
+}
+
+h1, h2{
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		text-align: center;
+	}
+
+#main{
+		width: auto;
+		margin: auto;
+	}
+
+#nav{
+	width: auto;
+	margin: auto;
+	padding-top: 14px;
+	padding-bottom: 6px;
+	height: 55px;
+}
+
+#navbar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+}
+
+#nav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav li{
+	width: 125px;
+	font-size: 17px;
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	text-align: center;
+}
+
+.videovideo{
+	width: 113px;
+	text-align: left;
+	margin-left: 10px;
+}
+
+#nav > ul{
+	display: flex;
+	align-items: flex-start;
+}
+  
+#nav a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	line-height: 36px;
+	height: 39px;
+	padding: 6px;
+
+}
+
+#nav li:hover{
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#nav a:hover{
+	color: #8DB580;
+}
+
+#nav ul ul{
+	display: none;
+}
+
+#nav li:hover >ul{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.jw{
+	height: 30px;
+	padding-left: 25px;
+}
+
+#nav li .about{
+	font-size: 16px;
+	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	margin-left: 850px;
+	padding: 66px;
+	padding-left: 20px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+	border-radius: 10px;
+	background-color: #4B4A67;
+}
+
+.about:hover{
+	background-color: #4B4A67;
+}
+
+#footer{
+	padding: 1px;
+	width: auto;
+	height: 50px;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+     
+
+#navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  /* sticky or fixed are fine */
+  position: fixed;
+  top: 0;
+  height: 65px;
+  width: 100%;
+  background: linear-gradient(to bottom, #000, #0003 70%,#0000); /* background when scroll is in the top */
+  transition: background .5s; /* control how smooth the background changes */
+}
+
+#navbar.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+main {
+  height: 200vh;
+}
+
+
+
+
+

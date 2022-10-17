@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Jay Wang, USC, Freshman, Portfolio, Marketing, Consulting, Concepts, Design, Promotional, Logos, Videos, Reports, Logos, Campaigns, Social Media, Photography">
+	<meta name="description" content="Jay Wang's Design Porfolio with material such as reports, logos, digital campaigns, social media, and photography">
+	<meta name="author" content="Jay Wang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Portfolio – Jay Wang</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Roboto+Mono:wght@300&family=Rubik+Puddles&family=Shizuru&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="main.css">
+
+<style>
+
+	h1, h2{
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		text-align: center;
+	}
+
+	p{
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		font-size: 18px;
+		margin: 50px;
+	}
+
+	#blurb{
+		overflow: hidden;
+		position: relative;	
+		height: 425px;
+		background-color: #0C090A;
+		opacity: 90%;
+	}
+
+	.blurbimg{
+		position: absolute;
+		opacity: 8%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	#blurbtext{
+		padding-top: 85px;
+		position: relative;
+	}
+
+	.marketingquestion{
+		font-size: 69px;
+		margin-bottom: 25px;
+	}
+
+	.def{
+		text-align: center;
+		margin: 0px;
+		font-size: 16px;
+	}
+
+	#gallery{
+		display: flex;
+		width: auto;
+		margin: auto;
+		background-color: #8DB580;
+	}
+
+	.images{
+		width: 50%;
+	}
+
+	.designme{
+		padding-top: 20px;
+		background-color: #8DB580;
+	}
+
+	#row{
+		display: flex;
+		padding: 80px;
+		padding-bottom: 50px;
+
+		position: relative;
+	}
+
+	.middle{
+		width: 1240px;
+		z-index: 20;
+		padding-top: 82px;
+		font-size: 40px;
+		padding-bottom: 120px;
+		text-shadow: 1px 1px 5px black;
+
+		position: absolute;	
+		transition: all 2s;
+		opacity: 0;	
+		padding-bottom: 120px;
+	}
+
+	.designme:hover .middle{
+		transform: scale(1.2);
+		transition: all 1s ease 0s;
+		opacity: 1;
+	}
+
+	.designme:hover .row{
+		opacity: .88;
+	}
+
+	.row, .lastpics{
+		width: 275px;
+		height: auto;
+		border-radius: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#gallery{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#report, #mball, #poddy{
+		display: flex;
+	}
+
+	#report{
+		height: 700px;
+		padding: 50px;
+		padding-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.website{
+		height: 400%;
+		max-height: 650px;
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-x:scroll;
+		white-space: nowrap;
+	}
+
+	.report{
+		height: 400%;
+		max-height: 650px;
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.subtext{
+		width: 500px;
+		padding-left: 25px;
+	}
+
+	.subtext2{
+		font-size: 40px;
+		text-shadow: 1px 1px 6px black;
+	}
+
+	#mball{
+		width: 1100px;
+		padding-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		flex-direction: row;
+		padding-bottom: 0px;
+		height: 252px;
+	}
+
+	.images{
+		width: 500px;
+		height: 500px;
+		border-radius: 10px;
+	}
+
+	video{
+		width: 58.5%;   
+ 		height: auto; 
+	}
+
+	.mballsubtext{
+		width: 1000px;
+		padding-left: 25px;
+	}
+
+	#mballtop{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.mballreveal{
+		width: 100%;
+		max-width: 241px;
+		padding-left: 5px;
+	}
+
+	.mballcountdown{
+		width: 100%;
+		max-width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 310px;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-bottom: 5px;
+	}
+
+	.mballimg{
+		display: flex;
+		flex-direction: row;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 310px;
+	}
+
+	.mballdays{
+		width: 100%;
+		max-width: 220px;
+		padding: 5px;
+	}
+
+	.image{
+		width: 300px;
+		height: 300px;
+		padding: 25px;
+	}
+
+	#poddy{
+		width: 1000px;
+		height: 400px;
+		padding: 100px;
+		padding-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+
+	.poddyside{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.image2{
+		width: 350px;
+		height: 350px;
+		padding-left: 45px;
+	}
+
+	.poddysubtext{
+		width: 500px;
+		padding-left: 100px;
+	}
+
+	#poddy2{
+		display: flex;
+		width: 1050px;
+		height: 700px;
+		padding: 50px;
+		padding-top: 25px;
+		padding-bottom: 0px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.poddysubtext{
+		padding-left: 15px;
+		margin: 0px;
+	}
+
+	.poddysubtext2{
+		padding-left: 45px;
+		margin: 0px;
+	}
+
+	.subtext9{
+		font-size: 40px;
+		text-shadow: 1px 1px 6px black;
+		padding-left: 40px;
+	}
+
+	.clownig{
+		width: 450px;
+		padding-top: 15px;
+		padding-left: 20px;
+	}
+
+	.pano{
+		width: 460px;
+		padding: 5px;
+	}
+
+	#poddysidetop{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.poddyimg{
+		width: 230px;
+	}
+
+	.spotifyandinstagram{
+		padding-left: 50px;
+		margin: 0px;
+	}
+
+	.final{
+		font-size: 30px;
+		text-align: center;
+		background-color: #C2CFB2;
+		padding: 75px;
+		margin: 0px;
+		color: #4B4A67;
+	}
+
+	#tiktok{
+		width: 1275px;   
+ 		height: 300px;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		display: flex;
+ 		flex-direction: row;
+ 		padding: 0px;
+ 		position: relative;
+ 		padding-top: 0px;
+ 		padding-bottom: 60px;
+	}
+
+	#tiktok video{
+		width: 20%;
+	}
+
+	.designme2{
+		background-color: #8DB580;
+	}
+
+	#row2{
+		display: flex;
+		padding: 80px;
+		padding-top: 0px;
+		padding-bottom: 25px;
+
+		position: relative;
+	}
+
+	.gallerytext{
+		font-size: 40px;
+	}
+
+	.gallerytext2{
+		padding: 0px;
+		padding-bottom: 0px;
+		padding-top: 50px;
+		margin: 0px;
+	}
+
+	.styleguide{
+		height: 400%;
+		max-height: 650px;
+		width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-2:scroll;
+		white-space: nowrap;
+	}
+
+</style>
+</head>
+<body>
+	<div id="main">
+
+	<div id="navbar">
+		<div id="nav">
+
+			<ul>
+				<li><a href="final_project.html">
+				<img class="jw" src="img/jw.png" alt="jw"></a></li>
+				<li><a href="final_project.html" id="active-nav">Home</a></li>
+				<li><a href="marketing.html">Marketing</a>
+					<ul>
+						<li><a href="marketing.html#consulting">Consulting</a></li>
+						<li><a href="marketing.html#research">Research</a></li>
+						<li><a href="marketing.html#whyisthisnotworking">Projects</a></li>
+					</ul>
+					</li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="final_project.html#top" class="about">About</a></li>
+
+			</ul>
+
+		</div> 
+	</div>
+
+	<div id="blurb">
+		<img class="blurbimg" src="img/design.jpg" alt="marketing">
+		<div id="blurbtext">
+			<h1 class="marketingquestion">Design</h1>
+
+			<p class="def">/dəˈzīn/ noun – an art form, method of human expression, and process of creating something</p>
+		</div>
+	</div>
+
+	<div class="designme">
+		<div id="row">
+			<img class="row" src="img/designme1.jpg" alt="designme">
+			<img class="row" src="img/designme2.jpg" alt="designme">
+			<img class="row" src="img/designme3.jpg" alt="designme">
+			<img class="row" src="img/designme5.jpg" alt="designme">
+
+			<div class="middle"><h2>Design Is Everywhere</h2></div>
+		</div>
+	</div>
+
+	<div id="gallery">
+
+
+
+
+
+		<div id="report">
+			<embed src="design/dailyui.pdf" class="report" type="application/pdf">
+				<div class="subtext">
+					<p class="subtext2">From UI/UX Design Projects</p>
+					<p class="subtext3">These projects range from new app concepts, such as hanger and FRIBBLE, to interface redesigns, such as Converse and Spotify. All designs were created on Figma.</p>
+				
+
+				</div>
+		</div>
+
+
+		<div id="mball">
+			<div class="mballsubtext">
+			<p class="subtext2">to social media rebrands</p>
+			<p class="subtext3">Below are some graphics I made using Figma as part of AIM's Recruitment Campaign. </p>
+
+			</div>
+
+
+		</div>
+
+	
+
+		<div class="mballimg">
+			<img class="mballdays" src="design/dd1.png" alt="doordash">
+			<img class="mballdays" src="design/dd2.png" alt="doordash">
+			<img class="mballdays" src="design/dd3.png" alt="doordash">
+		</div>
+
+		<div class="mballimg">
+			<img class="mballdays" src="design/infosession.png" alt="mball sneakpeaks">
+			<img class="mballdays" src="design/timeline.png" alt="timeline">
+			<img class="mballdays" src="design/appopen.png" alt="appopen">
+		</div>
+
+		<div class="mballimg">
+			<img class="mballdays" src="design/flyeraim.png" alt="flyer aim">
+			<img class="mballdays" src="design/timelineaim.png" alt="timeline aim">
+			<img class="mballdays" src="design/allanaim.png" alt="allan aim">
+		</div>
+
+
+
+
+
+
+
+
+		<div id="report">
+			<embed src="design/oldwebsite.pdf" class="website">
+				<div class="subtext">
+					<p class="subtext2">From website redesigns</p>
+					<p class="subtext3">This website was made on Squarespace. However, I am also well-versed in other website builders, such as Wix, and I can also code a website from scratch using HTML, CSS, and JS.</p>
+					<p class="subtext3">Scroll to see a before and after of the AIM website.</p>
+
+				</div>
+		</div>
+
+
+
+		<div id="report">
+				<div class="subtext">
+					<p class="subtext2">to brand asset style guides</p>
+					<p class="subtext3">These style guides are created using Figma and feature important branding assets like logos, fonts, and colors.</p>
+
+				</div>
+
+				<embed src="design/style.pdf" class="styleguide">
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		<div id="report">
+			<embed src="design/lcabr.pdf" class="report" type="application/pdf">
+				<div class="subtext">
+					<p class="subtext2">From national award-winning business reports</p>
+					<p class="subtext3">Second Place – FBLA National Leadereship Conference</p>
+					<p class="subtext3">State Champion – CAFBLA State Leadership Conference</p>
+
+				</div>
+		</div>
+
+
+		<div id="mball">
+			<div class="mballsubtext">
+			<p class="subtext2">to digital campaigns for events</p>
+			<p class="subtext3">Promotional material for the 007-themed "Marshall Ball" on the right include reveals, countdowns, and video.</p>
+
+			</div>
+
+
+			<div class="mballtop">
+				<video controls autoplay loop muted>
+					<source class="mballvid" src="design/mball.mp4">
+				</video>	
+
+					<img class="mballreveal" src="design/mballreveal.png" alt="mball reveal">		
+			</div>
+		</div>
+
+			<img class="mballcountdown" src="design/mballcountdown.png" alt="mball countdown">
+
+		<div class="mballimg">
+			<img class="mballdays" src="design/mballsneakpeaks.png" alt="mball sneakpeaks">
+			<img class="mballdays" src="design/mballdays.jpg" alt="mball days">
+			<img class="mballdays" src="design/mballdays2.jpg" alt="mball days">
+		</div>
+
+		<div id="poddy">
+			<div class="poddyside">
+			<div class="poddysidetop">
+				<img class="poddyimg" src="img/clowncircle.png" alt="clowncircle">
+				<img class="poddyimg" src="img/clowncastcover.jpg" alt="clowncast cover">
+			</div>
+				<img class="pano" src="img/clowncastpano.jpg" alt="clowncast pano">
+			</div>
+
+				<div class="poddysubtext2">
+					<p class="subtext9">From podcast promotion art</p>
+					<img class="clownig" src="img/clowncastig.jpg" alt="clowncast instagram">
+				</div>
+
+		</div>
+
+		<div id="poddy2">
+			<div class="poddysubtext">
+			<p class="subtext2">to professional Instagram pages</p>
+			<p>Clowncast is a podcast I created with my two friends during the pandemic. The podcast has since gained 1.5k total listens on podcasting platforms and over 300 followers on Instagram. </p>
+
+			<p class="spotifyandinstagram">Spotify: Clowncast</p>
+			<p class="spotifyandinstagram">Instagram: @clowncastpodcast</p>
+			</div>
+		</div>
+
+		<div class="designme2">
+
+			<div class="gallerytext2"><h2 class="subtext2">From photography to tiktok</h2></div>
+
+			<div id="row2">
+				<img class="lastpics" src="img/pic1.jpg" alt="pictures">
+				<img class="lastpics" src="img/pic2.jpg" alt="pictures"> 
+				<img class="lastpics" src="img/pic3.jpg" alt="pictures"> 
+				<img class="lastpics" src="img/pic4.jpg" alt="pictures">
+			</div>
+
+		</div>
+
+		<div id="tiktok">
+			<video controls  loop muted>
+				<source class="tiktok" src="design/mbsc.mp4">
+			</video>
+
+			<video controls  loop muted>
+				<source class="tiktok" src="design/dayinthelife.mp4">
+			</video>
+
+			<video controls  loop muted>
+					<source class="tiktok" src="design/yapa2.mp4">
+			</video>
+
+			<video controls  loop muted>
+				<source class="tiktok" src="design/usc.mp4">
+			</video>
+
+			<video controls  loop muted>
+					<source class="tiktok" src="design/yapa.mp4">
+			</video>
+		</div>
+	</div>
+</div>
+		<script>
+				var navbar = document.querySelector('#navbar')
+
+				window.onscroll = function() {
+
+				  if (window.pageYOffset > 0) {
+				    navbar.classList.add('scrolled')
+				  } else {
+				    navbar.classList.remove('scrolled')
+				  }
+				}
+		</script>	
+</body>
+</html>

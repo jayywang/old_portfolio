@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Jay Wang, USC, Freshman, Marshall School of Business,  Portfolio, Marketing, Consulting, AIM, ICC, Research, Projects, BUAD, BUAD 307, BUAD 302">
+	<meta name="description" content="Jay Wang's Marketing Experiences that includes consulting, research, and projects">
+	<meta name="author" content="Jay Wang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> Portfolio – Jay Wang</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Roboto+Mono:wght@300&family=Rubik+Puddles&family=Shizuru&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="main.css">
+
+<style>
+
+	p{
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		font-size: 18px;
+		margin: 50px;
+	}
+
+	#blurb{
+		overflow: hidden;
+		position: relative;	
+		height: 425px;
+		background-color: #0C090A;
+		opacity: 90%;
+	}
+
+	.blurbimg{
+		position: absolute;
+		opacity: 8%;
+		width: 100%;
+		z-index: 1;
+	}
+
+	#blurbtext{
+		padding-top: 85px;
+		position: relative;
+	}
+
+	.marketingquestion{
+		font-size: 69px;
+		margin-bottom: 25px;
+	}
+
+	.def{
+		text-align: center;
+		margin: 0px;
+		font-size: 16px;
+	}
+
+	#what{
+		display: flex;
+		width: auto;
+		margin: auto;
+	}
+
+	#whatleft{
+		padding-top: 35px;
+	}
+
+	.whatsubtitle{
+		padding-top: 65px;
+		font-size: 36px;
+		padding-left: 15px;
+		margin-bottom: 25px;
+		color: #4B4A67;
+	}
+
+	.whattext{
+		font-size: 21px;
+		margin-top: 0px;
+		padding-top: 10px;
+		margin-bottom: 25px;
+	}
+
+	#scroll{
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		color: black;
+		margin-left: 0px;
+		padding-top: 25px;
+	
+	}
+
+	.scroll{
+		text-decoration: none;
+		font-size: 20px;
+		padding: 15px;
+		border-radius: 8px;
+		color: #4B4A67;
+		background-color: #C2CFB2;
+	}
+
+	.scroll:hover{
+		background-color: #8DB580;
+	}
+
+	#container{
+		background-color: #CCC;
+		width: 100%;
+		max-width: 350px;
+		border-radius: 30px;
+		margin-top: 50px;
+		margin-right: 50px;
+		
+		position: relative;
+	}
+
+	#meeting{
+		width: 100%;
+		max-width: 350px;
+		height: 100%;
+		border-radius: 30px;
+	}
+
+	.caption{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		padding-top: 175px;
+
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		text-align: center;
+		font-size: 14px;
+
+		border-radius: 30px;
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #FFF;
+		visibility: hidden;
+	}
+
+	#container:hover > .caption{
+		visibility: visible;
+	}
+
+
+	#body2{
+		width: auto;
+		background-color: #DDD1C7;
+	}
+
+	#logos{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #4B4A67;
+		padding: 25px;
+		padding-top: 0px;
+		margin-top: 0px;
+		padding-left: 150px;
+	}
+
+	.logos{
+		width: 200px;
+		padding: 10px;
+		padding-right: 0px;
+	}
+
+	.slides{
+		width: 400%;
+		max-width: 500px;
+		height: 375px;
+	}
+
+	#row1, #row2, #row3, #row4, #row5, #row6{
+		padding: 50px;
+
+		display: flex;
+		flex-direction: row;
+	}
+
+	#row1, #row3, #row5{
+		padding-top: 75px;
+		justify-content: space-evenly;
+	}
+
+	#row2, #row4, #row6{
+		padding-top: 0px;
+		justify-content: space-evenly;
+	}
+
+	#row3{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#row4{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#row5{
+		padding-top: 25px;
+		padding-bottom: 0px;
+	}
+
+	#row6{
+		padding-top: 100px;
+		justify-content: space-evenly;
+	}
+
+	#consulting, #research, #whyisthisnotworking{
+		font-size: 32px;
+		margin-bottom: 0px;
+		background-color: #4B4A67;
+		margin: -20px;
+		color: white;
+		padding: 50px;
+		padding-right: 0px;
+		margin-right: 0px;
+		padding-bottom: 10px;
+		margin-top: 50px;
+	}
+
+	#consulting{
+		background-color: #4B4A67;
+	}
+
+	.consulting{
+		background-color: #DDD1C7;
+		padding-bottom: 75px;
+	}
+
+	#projects{
+		background-color: #4B4A67;
+	}
+
+	.bodytext{
+		color: #4B4A67;
+		font-size: 19px;
+		margin-right: 0px;
+		margin-top: 20px;
+	}
+
+	.bodytext2{
+		color: #4B4A67;
+		font-size: 19px;
+		padding-left: 0px;
+		margin-left: 25px;
+		margin-top: 20px;
+	}
+
+	.test{
+		background-color: #4B4A67;
+		padding-right: 60px;
+	}
+
+	.curacao, .gongcha, .innout, .montero{
+		width: 500px;
+	}
+
+	h2{
+		color: #4B4A67;
+		font-weight: bold;
+		font-size: 32px;
+		margin: 0px;
+		padding: 0px;
+		text-align: center;
+	}
+
+	.testtest{
+		justify-content: space-evenly;
+		display: flex;
+	}
+
+	.test2{
+		background-color: #4B4A67;
+		padding: 60px;
+		margin: 0px;
+	}
+
+	.test3{
+		background-color: #4B4A67;
+		margin: 0px;
+		padding: 60px;
+	}
+
+</style>
+</head>
+<body>
+	<div id="main">
+
+	<div id="navbar">
+		<div id="nav">
+
+			<ul>
+				<li><a href="final_project.html">
+				<img class="jw" src="img/jw.png" alt="jw"></a></li>
+				<li><a href="final_project.html" id="active-nav">Home</a></li>
+				<li><a href="marketing.html">Marketing</a>
+					<ul>
+						<li><a href="marketing.html#consulting">Consulting</a></li>
+						<li><a href="marketing.html#research">Research</a></li>
+						<li><a href="marketing.html#whyisthisnotworking">Projects</a></li>
+					</ul>
+					</li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="final_project.html#top" class="about">About</a></li>
+
+			</ul>
+
+		</div> 
+	</div>
+
+	<div id="blurb">
+		<img class="blurbimg" src="img/marketing.jpg" alt="marketing">
+		<div id="blurbtext">
+			<h1 class="marketingquestion">Marketing</h1>
+
+			<p class="def">/ˈmärkədiNG/ noun – the business of promoting and selling products, including market research and advertising</p>
+		</div>
+	</div>
+
+	<div id="what">
+
+		<div id="whatleft">
+
+		<h2 class=whatsubtitle>My Idea of Marketing</h2>
+
+		<p class="whattext">While most interpret marketing as sneaky ways to make consumers spend money, I believe that marketing is the power of creativity. From my experiences, I have been able to explore different facits of marketing, combining business with creativity. Please view all my marketing experiences and projects in business consulting and research, as well as my marketing related projects.</p>
+
+		<div id="scroll">
+
+		<a href="#consulting" class="scroll">Consulting</a>
+		<a href="#research" class="scroll">Research</a>
+		<a href="#whyisthisnotworking" class="scroll">Projects</a>
+
+		</div>
+
+		</div>
+
+		<div id="container">
+		<img id="meeting" src="img/meeting.jpg" alt="meeting">
+		<div class="caption">Hosting a meeting as the VP of Marketing of the Marshall Business Student Government</div>
+
+		</div>
+
+	</div>
+
+	<div id="body2">
+		<div class="consulting">
+		<h2 id="consulting">Consulting Decks</h2>
+
+		<div id="logos">
+
+		<a href="https://www.uscaimc.org" target="_blank">
+		<img src="img/aim.png" class="logos" alt="aim"></a>
+
+		<a href="https://www.uscicc.com" target="_blank">
+		<img src="img/icc.png" class="logos" alt="icc"></a>
+
+		<p class="test">As a student at USC, I have immersed myself in the world of business and been able to work with major companies on consulting projects. The Association of Innovative Marketing Consulting, or AIM, is a marketing based consulting organization. The International Consulting Club, or ICC, is an international, management consulting organization. Click on the logos to the left to view their websites. Below are the consulting projects I have done while in these organizations.</p>
+
+		</div>
+
+		<div id="row1">
+			<div class="curacao">
+
+			<h2>Curacao</h2>
+
+			<p class="bodytext">As a marketing consultant, I worked with Curacao, a  Latinx retail store chain, in collaboration with USC AIM, to expand their market outside of their current target demographic. On the left is the final consulting deck my team created after numerous focus groups, primary and secondary research, and digital audits, which includes our recommendations for their online and in-store experiences.</p>
+
+			</div>
+
+			<embed src="marketing/curacao.pdf" class="slides" type="application/pdf">
+			
+		</div>
+
+		<div id="row2">
+				<embed src="marketing/gongcha.pdf" class="slides" type="application/pdf">
+
+				<div class="gongcha">
+				<h2>Gong Cha</h2>
+
+				<p class="bodytext2">As a managemenet consultant, I worked with Gong Cha, an international tea beverage franchise, in collaboration with USC ICC, to audit their social media platforms and reevaluate their approach for promotion. On the right is a midsemester consulting deck with initial recommendations based off of our research. This project is still in progress as we're working with our client to finalize recommendations.</p>
+				</div>
+		</div>
+
+		<h2 id="research">Marketing Research</h2>
+
+		<p class="test2">In my Freshman year at USC, I took BUAD 307: Fundamentals of Marketing. This class educated me on the more technical aspects of business and makerting, allowing me to learn important concepts such as Marketing Mix and SWOT Analysis. I have applied these ideas into my marketing research which can be seen below.</p>
+
+		<div id="projectstop">
+
+		<div id="row3">
+			<div class="innout">
+
+				<h2>Vegan-N-Out</h2>
+
+				<p class="bodytext">The final project in my BUAD 307 course was to pitch a product for an existing company by analyzing market trends, company prospects, and marketing opportunities. Our product, cleverly named the "VegaN-N-Out" Burger, is a vegan option to In-N-Out's famous burgers. Some notable highlights of our project include the segmentation and promotional material. Our final presentation and report received a perfect grade of 100%.</p>
+
+			</div>
+
+				<embed src="marketing/veginnout.pdf" class="slides" type="application/pdf">
+		</div>
+
+		<div id="row4">
+			<embed src="marketing/montero.pdf" class="slides" type="application/pdf">
+
+				<div class="montero">
+
+					<h2>Montero</h2>
+
+				<p class="bodytext2">Marketing in the News was a research project in my BUAD 307 course where we had to analyze a marketing campaign through the lens of business concepts we learned in the class. My topic was on Lil Nas X's promotional campign for his new album "Montero". Using the Marketing Mix and SWOT Analysis, I was able to quantify if the project was a success or not.</p>
+				</div>
+		</div>
+		</div>
+
+		<h2 id="whyisthisnotworking">Marketing Projects</h2>
+
+			<p class="test3">In my Communication Strategies for Business course, we have to give business-styled presentations. Below are two of the presentations that I gave in the class. The highlight of these presentations is the slide deck, which has minimalistic designs and features images and icons to convey information.</p>
+
+
+		<div id="row6">	
+
+			<embed src="marketing/buad1.pdf" class="slides" type="application/pdf">	
+			<embed src="marketing/buad2.pdf" class="slides" type="application/pdf">
+		</div>
+				
+		</div>
+
+	</div>
+
+</div>
+
+		<script>
+			var navbar = document.querySelector('#navbar')
+
+			window.onscroll = function() {
+
+			  if (window.pageYOffset > 0) {
+			    navbar.classList.add('scrolled')
+			  } else {
+			    navbar.classList.remove('scrolled')
+			  }
+			}
+		</script>
+
+</body>
+</html>
