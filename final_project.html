@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Jay Wang, USC, Freshman, Marshall School of Business, Viterbi School of Engineering, Portfolio, Marketing, Consulting, Concepts, Design, Promotional, Logos, Mischellaneous, Resume, Linkedin">
+	<meta name="description" content="Jay Wang's Porfolio with material related to marketing and design">
+	<meta name="author" content="Jay Wang">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Portfolio – Jay Wang</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&family=Roboto+Mono:wght@300&family=Rubik+Puddles&family=Shizuru&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="main.css">
+
+<style>
+
+	#jay{
+		overflow: hidden;
+		position: relative;	
+		height: 625px;
+		background-color: #0C090A;
+		opacity: 90%;
+	}
+
+	.jayimg{
+		position: absolute;
+		opacity: 40%;
+		width: auto;
+		height: 625px;
+		z-index: 1;
+	}
+
+	#jaytext{
+		padding-top: 135px;
+		position: relative;
+	}
+
+	.jaywang{
+		text-align: left;
+	}
+
+	.jaywangsub{
+		text-align: left;
+		padding-left: 130px;
+		font-size: 24px;
+	}
+
+	#top{
+		display: flex;
+		background-color: #DDD1C7;
+		justify-content: space-evenly;
+		width: auto;
+	}
+
+	#text{
+		display: flex;
+		flex-direction: column;
+		background-color: #DDD1C7;
+	}
+
+	p{
+		font-family: 'Roboto Mono', monospace;
+		color: white;
+		text-align: center;
+	}
+
+	.headshot{
+		width: 400px;
+		height: auto;
+		margin: 50px;
+		margin-right: 0px;
+		border-radius: 30px;
+	}
+
+	h1{
+		font-size: 120px;
+		text-align: center;
+		margin: 50px;
+		font-family: 'Roboto Mono', monospace;
+		margin-bottom: 0px;
+	}
+
+	.aboutme{
+		color: #4B4A67;
+		padding-top: 100px;
+	}
+
+	.text_01{
+		text-align: center;
+		font-size: 21px;
+		color: #4B4A67;
+
+		margin-left: 50px;
+		margin-right: 45px;
+
+		width: 600px;
+		height: 200px;
+		padding: 0px;
+		margin-top: 20px;
+	}
+
+	.text_02{
+		text-align: center;
+		font-size: 21px;
+		color: #4B4A67;
+
+		padding: 0px;
+	}
+
+	.click{
+		background-color: #DDD1C7;
+		margin: 0px;
+		padding: 10px;
+		color: #4D4A67;
+		background-color: #C2CFB2;
+	}
+
+	#icons{
+		display: flex;
+		justify-content: space-evenly;
+		width: auto;
+		padding: 25px;
+		background-color: #8DB580;
+	}
+
+	.linkedin_icon{
+		width: 150px;
+		height: 150px;
+		padding: 20px;
+		transition: all 1s;
+	}
+
+	.linkedin_icon:hover {
+		transition: all 1s ease 0s;
+		transform: scale(1.2);
+	}
+
+	.resume_icon{
+		width: 145px;
+		height: 145px;
+		padding: 23px;
+		transition: all 1s;
+	}
+
+	.resume_icon:hover {
+		transition: all 1s ease 0s;
+		transform: scale(1.2);
+	}
+
+	.marketing_icon{		
+		width: 150px;
+		height: 150px;
+		padding: 20px;
+		padding-left: 20px;
+		transition: all 1s;
+	}
+
+	.marketing_icon:hover {
+		transition: all 1s ease 0s;
+		transform: scale(1.2);
+	}
+
+	.design_icon{
+		width: 170px;
+		height: 170px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 30px;
+		transition: all 1s;
+	}
+
+	.design_icon:hover {
+		transition: all 1s ease 0s;
+		transform: scale(1.2);
+	}
+
+	.caption{
+		font-size: 18px;
+		padding: 0px;
+		margin: 0px;
+		font-weight: bold;
+	}
+
+	.icon{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#bio{
+		background-color: #4B4A67;
+	}
+
+	.top{
+		padding: 5px;
+		padding-bottom: 0px;
+	}
+
+	.facts{
+		font-size: 24px;
+	}
+
+	.bottom{
+		display: flex;
+		justify-content: space-evenly;
+		text-align: left;
+		padding-bottom: 25px;
+	}
+
+	.leftside{
+		text-align: left;
+		font-size: 20px;
+		color: #DDD1C7;
+	}
+
+	.rightside{
+		text-align: right;
+		font-size: 20px;
+		color: #DDD1C7;
+	}
+
+	.facts{
+		color: #DDD1C7;
+	}
+
+</style>
+</head>
+<body>
+	<div id="main">
+
+	<div id="navbar">
+		<div id="nav">
+
+			<ul>
+				<li><a href="final_project.html">
+				<img class="jw" src="img/jw.png" alt="jw"></a></li>
+				<li><a href="final_project.html" id="active-nav">Home</a></li>
+				<li><a href="marketing.html">Marketing</a>
+					<ul>
+						<li><a href="marketing.html#consulting">Consulting</a></li>
+						<li><a href="marketing.html#research">Research</a></li>
+						<li><a href="marketing.html#whyisthisnotworking">Projects</a></li>
+					</ul>
+					</li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="final_project.html#top" class="about">About</a></li>
+
+			</ul>
+
+		</div> 
+	</div>
+
+	<div id="jay">
+		<img class="jayimg" src="img/grad.jpg" alt="graduation">
+		<div id="jaytext">
+			<h1 class="jaywang">Jay Wang</h1>
+
+			<p class="jaywangsub">Creative | Visionary | Leader</p>
+		</div>
+	</div>
+
+	<div id="top">
+		<img class="headshot" src="img/headshot.jpg" alt="Jay">
+
+		<div id="text">
+			<h2 class="aboutme">About Me</h2>
+
+			<p class="text_01">Hello, my name is Jay Wang and I'm a Sophomore at USC studying Business Administration with a minor in Web Technologies and Applications. I am passionate about marketing, design, and project management. I am intersted in pursuing opportunities in consulting, technology, and the entertainment industry.</p>
+
+			<p class="text_02">Fun Fact: I coded this website from scratch!</p>
+
+		</div>
+
+	</div>
+
+		<h2 class="click">Click an icon to view a part of my portfolio!</h2>
+
+	<div id="icons">
+
+		<div class="icon">
+			<a href="marketing.html">
+			<img class="marketing_icon" src="img/marketing.png" alt="marketing">
+			</a>
+			<p class="caption">Marketing</p>
+		</div>
+
+		<div class="icon">
+			<a href="design.html">
+			<img class="design_icon" src="img/design.png" alt="design">	
+			</a>
+			<p class="caption">Design</p>
+		</div>
+
+		<div class="icon">
+			<a href="resume.pdf" target="_blank">
+			<img class="resume_icon" src="img/resume.png" alt="resume">	
+			</a>
+			<p class="caption">Resume</p>
+		</div>
+
+		<div class="icon">
+			<a href="https://www.linkedin.com/in/jaywang8/" target="_blank">
+			<img class="linkedin_icon" src="img/linkedin.png" alt="linkedin">	
+			</a>
+			<p class="caption">LinkedIn</p>
+		</div>
+	
+	</div>
+
+</div>
+	<div id="footer">
+
+		<p>Feel free to contact me by phone or email: (626)268-7034 or <a href="mailto:jaywang@usc.edu">jaywang@usc.edu</a></p>
+
+	</div>
+
+	<script>
+			var navbar = document.querySelector('#navbar')
+
+			window.onscroll = function() {
+
+			  if (window.pageYOffset > 0) {
+			    navbar.classList.add('scrolled')
+			  } else {
+			    navbar.classList.remove('scrolled')
+			  }
+			}
+	</script>
+
+</body>
+</html>
