@@ -1,1 +1,1 @@
-https://jayywang.github.io/portfolio_old/
+https://jayywang.github.io/old_portfolio/
